@@ -12,6 +12,7 @@ It's used on [En Defensa del Software Libre][0].
 ## Configuration
 
 Default configuration (change it by superseding in `_config.yml`):
+
     torrent:
       announce: 'udp://tracker.publicbt.com:80'
       file:     'site.torrent'
