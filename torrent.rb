@@ -1,12 +1,13 @@
 # Creates a torrent file with your generated site. You should serve the files
 # with your cliente.
 #
-# Default config values
-# torrent:
-#   announce: 'udp://tracker.publicbt.com:80'
-#   file:     'site.torrent'
-#   flags:    '--verbose'
-#   bin:      'mktorrent'
+# Default config values:
+#
+#     torrent:
+#       announce: 'udp://tracker.publicbt.com:80'
+#       file:     'site.torrent'
+#       flags:    '--verbose'
+#       bin:      'mktorrent'
 #
 module Jekyll
   class Site
@@ -21,7 +22,7 @@ module Jekyll
       # The torrent file is written at the root of the site
       file = "#{dest}/#{torrent['file']}"
 
-      # Delete existing files since `mktorrent` doesn't overwrite it
+      # Delete existing file since `mktorrent` doesn't overwrite it
       File.delete(file) if File.exists?(file)
 
       puts "Generating torrent file at #{file}"
