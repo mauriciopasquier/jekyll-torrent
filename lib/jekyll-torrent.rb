@@ -1,3 +1,5 @@
+require 'jekyll-torrent/version'
+
 # Creates a torrent file with your generated site. You should serve the files
 # with your cliente.
 #
@@ -36,7 +38,7 @@ module Jekyll
     private
       # Merges config with default values
       def torrent
-        @torrent_config ||= { 
+        @torrent_config ||= {
           'announce'  => 'udp://tracker.publicbt.com:80',
           'file'      => 'site.torrent',
           'flags'     => '--verbose',
