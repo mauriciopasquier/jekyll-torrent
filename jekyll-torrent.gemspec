@@ -13,6 +13,7 @@ Gem::Specification.new do |gem|
                       monkeypatches `Jekyll::Site.process`.}
   gem.summary       = %q{Create a .torrent file with your whole site!}
   gem.homepage      = "https://github.com/mauriciopasquier/jekyll-torrent"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
